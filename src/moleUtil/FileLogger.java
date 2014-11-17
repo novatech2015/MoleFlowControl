@@ -31,6 +31,7 @@ public class FileLogger {
     
     public void write(String value) throws IOException{
         m_fileOut.write(value);
+        m_fileOut.flush();
     }
     
     public void close() throws IOException{
